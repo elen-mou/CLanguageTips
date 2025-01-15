@@ -14,6 +14,8 @@ int is_empty(Tree t) {
     return t == NULL;
 }
 
+// Returns tree depth (= the maximum 
+// number of connections between nodes).
 int depth(Tree t) {
     if (t == NULL) return -1;
     int left_depth = depth(t->left);
@@ -22,11 +24,11 @@ int depth(Tree t) {
 }
 
 int main() {
-    // is_empty
-    // Tree t = NULL;
+    // // is_empty
+    // treenode t = NULL;
     // printf("Empty: %d\n", is_empty(t));
 
-    // depth
+    //// depth
     // struct treenode t2 = {2, NULL, NULL}, t9 = {9, NULL, NULL}, t1 = {1, NULL, NULL};
     // struct treenode t7 = {7, &t2, &t9}; struct treenode t5 = {5, &t7, &t1};
     // Tree t = &t5;
